@@ -2,7 +2,7 @@ import React from "react";
 
 
 import { Card} from "react-bootstrap";
-import {HomeModal}  from "./Views/NavButton"
+import {HomeModal}  from "./Views/HomeModal"
 
 import {
   BsFillHouseFill,
