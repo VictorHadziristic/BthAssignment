@@ -1,0 +1,27 @@
+[
+    {
+        "ID": 0,
+        "Name": "Vacation Mode",
+        "Image": "GiLightBulb"
+    },
+    {
+        "ID": 1,
+        "Name": "Night Mode",
+        "Image": "GiLightBulb" 
+    },
+    {
+        "ID": 2,
+        "Name": "Day Mode",
+        "Image": "GiLightBulb" 
+    },
+    {
+        "ID": 3,
+        "Name": "Lights Out",
+        "Image": "GiLightBulb" 
+    },
+    {
+        "ID": 4,
+        "Name": "Good Morning",
+        "Image": "GiLightBulb" 
+    }
+]
