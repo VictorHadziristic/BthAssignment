@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Modal, Button } from "react-bootstrap";
-import GarageDoor from "../Devices/Garage";
+import TV from "../Devices/TV";
 
-export function HomeModal(props, state) {
+export function TVModal(props, state) {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,9 +14,9 @@ export function HomeModal(props, state) {
     console.log(d);
     let temp = d.map((device) => (
       <Row>
-        <GarageDoor subdata={device} key={device.id}>
+        <TV subdata={device} key={device.id}>
           {}
-        </GarageDoor>
+        </TV>
       </Row>
     ));
     console.log("Function End")
@@ -40,10 +40,10 @@ export function HomeModal(props, state) {
           <Modal.Title>{props.data.Name}</Modal.Title>
         </Modal.Header>
         <Row className="mt-3 mb-2 justify-content-center">
-          <GarageDoor subdata={props.data.Modal.Unit[0]}></GarageDoor>
+          <TV subdata={props.data.Modal.Unit[0]}></TV>
         </Row>
         <Row className="mt-3 mb-2 justify-content-center">
-          <GarageDoor subdata={props.data.Modal.Unit[1]}></GarageDoor>
+          <TV subdata={props.data.Modal.Unit[1]}></TV>
         </Row>
 
         <Modal.Footer>

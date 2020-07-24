@@ -5,6 +5,7 @@
         "Image": "BsFillHouseFill",
         "Modal": {
             "DeviceName": "GarageDoor",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -15,7 +16,7 @@
                 {
                     "id": 1,
                     "Name": "Second Garage",
-                    "Status": "closed"
+                    "Status": "open"
 
                 }
 
@@ -29,6 +30,7 @@
         "Image": "BsFillDisplayFill",
         "Modal": {
             "DeviceName": "TV",
+            "Modaltype": "TV",
             "Unit": [
                 {
                     "id": 0,
@@ -53,16 +55,17 @@
         "Image": "GiLightBulb",
         "Modal": {
             "DeviceName": "GarageDoor",
+            "Modaltype": "LightModal",
             "Unit": [
                 {
                     "id": 0,
-                    "Name": "Main Garage",
+                    "Name": "Kitchen Light",
                     "Status": "open"
 
                 },
                 {
                     "id": 1,
-                    "Name": "Second Garage",
+                    "Name": "Bedroom light",
                     "Status": "closed"
 
                 }
@@ -77,6 +80,7 @@
         "Image": "BsMusicNoteBeamed",
         "Modal": {
             "DeviceName": "GarageDoor",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -101,6 +105,7 @@
         "Image": "WiThermometer",
         "Modal": {
             "DeviceName": "GarageDoor",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -125,6 +130,7 @@
         "Image": "BsPlug",
         "Modal": {
             "DeviceName": "GarageDoor",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -149,6 +155,7 @@
         "Image": "BsFillPlusCircleFill",
         "Modal": {
             "DeviceName": "GarageDoor",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,

@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col, Modal, Button } from "react-bootstrap";
-import GarageDoor from "../Devices/Garage";
+import Light from "../Devices/Light";
 
-export function HomeModal(props, state) {
+export function LightModal(props, state) {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,9 +14,9 @@ export function HomeModal(props, state) {
     console.log(d);
     let temp = d.map((device) => (
       <Row>
-        <GarageDoor subdata={device} key={device.id}>
+        <Light subdata={device} key={device.id}>
           {}
-        </GarageDoor>
+        </Light>
       </Row>
     ));
     console.log("Function End")
@@ -40,10 +40,10 @@ export function HomeModal(props, state) {
           <Modal.Title>{props.data.Name}</Modal.Title>
         </Modal.Header>
         <Row className="mt-3 mb-2 justify-content-center">
-          <GarageDoor subdata={props.data.Modal.Unit[0]}></GarageDoor>
+          <Light subdata={props.data.Modal.Unit[0]}></Light>
         </Row>
         <Row className="mt-3 mb-2 justify-content-center">
-          <GarageDoor subdata={props.data.Modal.Unit[1]}></GarageDoor>
+          <Light subdata={props.data.Modal.Unit[1]}></Light>
         </Row>
 
         <Modal.Footer>

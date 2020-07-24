@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Row, Col } from "react-bootstrap";
 
-class GarageDoor extends React.Component {
+class Light extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -17,11 +17,13 @@ class GarageDoor extends React.Component {
             <Form.Check
               type="switch"
               id="custom-switch"
-              label="Open/Close"
+              label="On/Off"
               //onChange={handleChange}
             />
+            <Form.Label>Brightness</Form.Label>
+    <Form.Control type="range" />
           </Form>
-          {console.log('Garage Was called')}
+          {console.log('Light Was called')}
         </Col>
         <Col></Col>
       </Row>
@@ -29,4 +31,4 @@ class GarageDoor extends React.Component {
   }
 }
 
-export default GarageDoor;
+export default Light;

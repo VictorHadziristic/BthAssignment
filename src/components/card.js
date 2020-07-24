@@ -3,6 +3,8 @@ import React from "react";
 
 import { Card} from "react-bootstrap";
 import {HomeModal}  from "./Views/HomeModal"
+import {TVModal} from "./Views/TVModal"
+import {LightModal} from "./Views/LightsModal"
 
 import {
   BsFillHouseFill,
@@ -18,6 +20,7 @@ class OptionCard extends React.Component {
   constructor(props) {
     super(props);
     this.pickImage = this.pickImage.bind(this);
+    this.pickModal = this.pickModal.bind(this);
   }
 
 
@@ -31,6 +34,13 @@ class OptionCard extends React.Component {
       "BsPlug":BsPlug,
       "BsFillPlusCircleFill":BsFillPlusCircleFill,
       "WiThermometer": WiThermometer
+    },
+
+    Modals:
+    {
+      "HomeModal": HomeModal,
+      "TV":TVModal,
+      "LightModal": LightModal
     }
       
   };
@@ -46,6 +56,16 @@ class OptionCard extends React.Component {
     
   }
 
+  pickModal()
+  {
+      var Tempmodal = this.state.Modals[this.props.data.Modal.Modaltype]
+      console.log(this.props.data.Modal.Modaltype)
+
+      return  ( 
+        <Tempmodal data={this.props.data}></Tempmodal>
+      )
+  }
+
 
 
   render() {
@@ -55,7 +75,7 @@ class OptionCard extends React.Component {
         <Card.Body className="d-flex flex-column justify-content-md-center">
           {this.pickImage("This")}
 
-          <HomeModal  data={this.props.data}></HomeModal>
+          {this.pickModal()}
         </Card.Body>
       </Card>
     );
