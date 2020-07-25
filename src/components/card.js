@@ -3,6 +3,9 @@ import {Card} from "react-bootstrap";
 import {HomeModal}  from "./Views/HomeModal"
 import {TVModal} from "./Views/TVModal"
 import {LightModal} from "./Views/LightsModal"
+import{MusicModal} from "./Views/MusicModal"
+import{ThermModal} from "./Views/ThermModal"
+import{PlugModal} from "./Views/PlugModal"
 
 import {
   BsFillHouseFill,
@@ -37,7 +40,10 @@ class OptionCard extends React.Component {
     {
       "HomeModal": HomeModal,
       "TV":TVModal,
-      "LightModal": LightModal
+      "LightModal": LightModal,
+      "MusicModal": MusicModal,
+      "ThermModal": ThermModal,
+      "PlugModal":PlugModal
     }
   };
 
@@ -52,7 +58,6 @@ class OptionCard extends React.Component {
     
   }
 
-<<<<<<< HEAD
   pickModal()
   {
       var Tempmodal = this.state.Modals[this.props.data.Modal.Modaltype]
@@ -65,20 +70,14 @@ class OptionCard extends React.Component {
 
 
 
-=======
->>>>>>> d5ea051977300ee640f016822e5227637c05974c
   render() {
     //<Card.Image variant="top" src={this.props.data.image} />
     return (
       <Card  border="primary" className="h-60 shadow-sm bg-white rounded ">
         <Card.Body className="d-flex flex-column justify-content-md-center">
           {this.pickImage("This")}
-<<<<<<< HEAD
 
           {this.pickModal()}
-=======
-          <HomeModal  data={this.props.data}></HomeModal>
->>>>>>> d5ea051977300ee640f016822e5227637c05974c
         </Card.Body>
       </Card>
     );

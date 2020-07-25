@@ -80,17 +80,17 @@
         "Image": "BsMusicNoteBeamed",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "HomeModal",
+            "Modaltype": "MusicModal",
             "Unit": [
                 {
                     "id": 0,
-                    "Name": "Main Garage",
+                    "Name": "Amazon Echo",
                     "Status": "open"
 
                 },
                 {
                     "id": 1,
-                    "Name": "Second Garage",
+                    "Name": "Google Hub",
                     "Status": "closed"
 
                 }
@@ -105,7 +105,7 @@
         "Image": "WiThermometer",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "HomeModal",
+            "Modaltype": "ThermModal",
             "Unit": [
                 {
                     "id": 0,
@@ -130,18 +130,48 @@
         "Image": "BsPlug",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "HomeModal",
+            "Modaltype": "PlugModal",
             "Unit": [
                 {
                     "id": 0,
-                    "Name": "Main Garage",
+                    "Name": "Living",
                     "Status": "open"
 
                 },
                 {
                     "id": 1,
-                    "Name": "Second Garage",
+                    "Name": "garage",
                     "Status": "closed"
+
+                },
+                {
+                    "id": 2,
+                    "Name": "kitchen",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 3,
+                    "Name": "Bedroom",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 4,
+                    "Name": "Washroom",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 5,
+                    "Name": "bathroom",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 6,
+                    "Name": "Guest Bedroom",
+                    "Status": "open"
 
                 }
 
@@ -155,7 +185,7 @@
         "Image": "BsFillPlusCircleFill",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "HomeModal",
+            "Modaltype": "NewModal",
             "Unit": [
                 {
                     "id": 0,
