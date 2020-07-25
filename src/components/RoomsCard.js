@@ -1,7 +1,5 @@
 import React from "react";
 import {Card} from "react-bootstrap";
-import {HomeModal}  from "./Views/HomeModal"
-
 import {
   BsFillHouseFill,
   BsFillDisplayFill,
@@ -11,14 +9,16 @@ import {
 } from "react-icons/bs";
 import { GiLightBulb } from "react-icons/gi";
 import { WiThermometer } from "react-icons/wi";
+import {RoomsModal} from './Views/RoomsModal';
 
-class OptionCard extends React.Component {
+class RoomsCard extends React.Component {
   constructor(props) {
     super(props);
     this.pickImage = this.pickImage.bind(this);
+    
   }
-
-  state = {
+  
+  state2 = {
     images:
     {
      "BsFillHouseFill": BsFillHouseFill,
@@ -31,28 +31,37 @@ class OptionCard extends React.Component {
     }
   };
 
-  //Dynamically chooses what image to display based on the Image string in the data
+  state = { show: false };
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
+
   pickImage()
   {
-    var Img = this.state.images[this.props.data.Image]
-  return  ( 
-  <div className="p-2 d-flex justify-content-md-center"  style={{color: 'SteelBlue'}}>
-  <Img size={64} />
+    var Img = this.state2.images[this.props.data.Image]
+    return  ( 
+    <div className="p-2 d-flex justify-content-md-center"  style={{color: 'SteelBlue'}}>
+        <Img size={64} />
     </div>)
-    
   }
 
   render() {
-    //<Card.Image variant="top" src={this.props.data.image} />
     return (
-      <Card  border="primary" className="h-60 shadow-sm bg-white rounded ">
+      <Card border="primary" className="h-60 shadow-sm bg-white rounded justify-content-md-center">
+        <Card.Header className='bg-white'>{this.props.data.Name}</Card.Header>
         <Card.Body className="d-flex flex-column justify-content-md-center">
-          {this.pickImage("This")}
-          <HomeModal  data={this.props.data}></HomeModal>
+         {this.props.data.NumDevices} Devices
+         <RoomsModal data={this.props.data} show={this.state.show} handleClose={this.hideModal}>
+        </RoomsModal>
         </Card.Body>
       </Card>
     );
   }
 }
 
-export default OptionCard;
+export default RoomsCard;

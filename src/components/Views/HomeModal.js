@@ -31,7 +31,7 @@ export function HomeModal(props, state) {
         size="lg"
         onClick={handleShow}
         block
-      >
+        >
         {props.data.Name}
       </Button>
 

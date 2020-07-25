@@ -1,41 +1,26 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
-import OptionCard from "./components/card";
-import CustomNav from "./components/navbar";
-//import profilePic from "..//images/Capture.PNG";
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import CustomNav from './components/navbar'
+import Home from './components/Views/Home';
+import Modes from './components/Views/Modes';
+import Rooms from './components/Views/Rooms';
+import Routines from './components/Views/Routines';
+import RecentlyViewed from './components/Views/RecentlyViewed';
 
-const titleCardArray = require("./resources/mainPagecards.json");
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  state = {
-    cards: titleCardArray.map((tempcard) => (
-      <Col xs={4} className="mb-3 mt-3">
-        <OptionCard data={tempcard}></OptionCard>
-      </Col>
-    )),
-  };
-
-  render() {
-    return (
-      <Container fluid>
-        <Row>
-          <CustomNav></CustomNav>
-        </Row>
-        <Row className="mt-5 mb-5">
-          <Col md={2}></Col>
-          <Col md={8}>
-            <Row>{this.state.cards}</Row>
-          </Col>
-          <Col md={2}></Col>
-        </Row>
-      </Container>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <CustomNav />
+      <Switch>
+       <Route path="/" exact component={ Home } />
+       <Route path="/Modes" component={ Modes } />
+       <Route path="/Rooms" component={ Rooms } />
+       <Route path="/Routines" component={ Routines } />
+       <Route path="/RecentlyViewed" component={ RecentlyViewed } />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
