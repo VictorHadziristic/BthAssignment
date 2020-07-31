@@ -12,6 +12,7 @@ class Home extends React.Component {
           <OptionCard data={tempcard}></OptionCard>
         </Col>
       )),
+      
     };
   
     render() {

@@ -1,7 +1,7 @@
 [
     {
         "ID": 0,
-        "Name": "Home",
+        "Name": "Garage",
         "Image": "BsFillHouseFill",
         "Modal": {
             "DeviceName": "GarageDoor",
@@ -30,7 +30,7 @@
         "Image": "BsFillDisplayFill",
         "Modal": {
             "DeviceName": "TV",
-            "Modaltype": "TV",
+            "Modaltype": "TVModal",
             "Unit": [
                 {
                     "id": 0,
@@ -55,7 +55,7 @@
         "Image": "GiLightBulb",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "LightModal",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -80,7 +80,7 @@
         "Image": "BsMusicNoteBeamed",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "MusicModal",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -130,7 +130,7 @@
         "Image": "BsPlug",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "PlugModal",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,
@@ -185,7 +185,7 @@
         "Image": "BsFillPlusCircleFill",
         "Modal": {
             "DeviceName": "GarageDoor",
-            "Modaltype": "NewModal",
+            "Modaltype": "HomeModal",
             "Unit": [
                 {
                     "id": 0,

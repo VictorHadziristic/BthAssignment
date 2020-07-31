@@ -2,10 +2,8 @@ import React from "react";
 import {Card} from "react-bootstrap";
 import {HomeModal}  from "./Views/HomeModal"
 import {TVModal} from "./Views/TVModal"
-import {LightModal} from "./Views/LightsModal"
-import{MusicModal} from "./Views/MusicModal"
-import{ThermModal} from "./Views/ThermModal"
-import{PlugModal} from "./Views/PlugModal"
+import {ThermModal} from "./Views/ThermModal"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import {
   BsFillHouseFill,
@@ -39,11 +37,8 @@ class OptionCard extends React.Component {
     Modals:
     {
       "HomeModal": HomeModal,
-      "TV":TVModal,
-      "LightModal": LightModal,
-      "MusicModal": MusicModal,
-      "ThermModal": ThermModal,
-      "PlugModal":PlugModal
+      "TVModal":TVModal,
+      "ThermModal":ThermModal
     }
   };
 

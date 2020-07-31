@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Modal, Button } from "react-bootstrap";
+import { Row, Col, Modal, Button, Form } from "react-bootstrap";
 import GarageDoor from "../Devices/Garage";
 
 export function HomeModal(props, state) {
@@ -39,11 +39,15 @@ export function HomeModal(props, state) {
         <Modal.Header closeButton>
           <Modal.Title>{props.data.Name}</Modal.Title>
         </Modal.Header>
-        <Row className="mt-3 mb-2 justify-content-center">
+        <Row className="mt-3 mb-2 ml-4">
+          <Form>
           <GarageDoor subdata={props.data.Modal.Unit[0]}></GarageDoor>
+          </Form>
         </Row>
-        <Row className="mt-3 mb-2 justify-content-center">
+        <Row className="mt-3 mb-2 ml-4">
+        <Form>
           <GarageDoor subdata={props.data.Modal.Unit[1]}></GarageDoor>
+          </Form>
         </Row>
 
         <Modal.Footer>
